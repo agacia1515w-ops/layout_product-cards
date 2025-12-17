@@ -1,0 +1,10 @@
+$font-family: 'Roboto', sans-serif;
+$card-width: 200px;
+$card-border: 1px solid #ccc;
+$star-color: #ffd700;
+$star-inactive-color: #e0e0e0;
+
+// index.scss
+
+@import './card';
+@import './stars';
