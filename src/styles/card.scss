@@ -1,14 +1,13 @@
-
-
+@use './variables' as vars;
 
 .card {
   position: relative;
-  width: 200px;
-  height: 406px;
+  width: vars.$card-width;
+  height: vars.$card-height;
   padding: 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  font-family: Roboto, sans-serif;
-  background: #fff;
+  box-shadow: vars.$card-shadow;
+  background: vars.$card-bg;
+  font-family: vars.$font-family;
 
   &__image {
     position: absolute;
@@ -29,7 +28,6 @@
     top: 206px;
     left: 16px;
     right: 16px;
-    width: 166px;
     height: 36px;
     font-size: 12px;
     font-weight: 500;
@@ -47,7 +45,6 @@
     font-weight: 400;
     line-height: 14px;
     color: #616070;
-    padding-right: 84px;
   }
 
   &__review {
@@ -61,12 +58,10 @@
     justify-content: space-between;
 
     &-count {
-      font-family: Roboto, sans-serif;
-      font-weight: 400;
       font-size: 10px;
       line-height: 14px;
-      text-align: right;
       color: #616070;
+      text-align: right;
     }
   }
 
@@ -74,11 +69,11 @@
     position: absolute;
     top: 316px;
     left: 16px;
-    width: 166px;
-    height: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 166px;
+    height: 18px;
 
     &-text {
       font-size: 12px;
@@ -103,15 +98,12 @@
     font-size: 14px;
     font-weight: 500;
     color: #fff;
-    background-color: #00acdc;
+    background-color: vars.$primary-color;
     border-radius: 5px;
     text-decoration: none;
 
     &:hover {
-  /* stylelint-disable scss/no-global-function-names */
-  background-color: darken(#00acdc, 15%);
-  /* stylelint-enable scss/no-global-function-names */
-}
-
+      background-color: #0095b8;
+    }
   }
 }
