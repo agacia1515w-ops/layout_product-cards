@@ -1,6 +1,9 @@
+
+
+
 .card {
   position: relative;
-  width: 198px;
+  width: 200px;
   height: 406px;
   padding: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -57,29 +60,10 @@
     align-items: center;
     justify-content: space-between;
 
-    .stars {
-      display: flex;
-      gap: 1px;
-
-      .star {
-        width: 16px;
-        height: 16px;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
-
-        &.star--active img {
-          filter: none;
-        }
-      }
-    }
-
     &-count {
       font-family: Roboto, sans-serif;
       font-weight: 400;
-      font-size: 10px; // tutaj możesz zmieniać rozmiar
+      font-size: 10px;
       line-height: 14px;
       text-align: right;
       color: #616070;
@@ -124,7 +108,10 @@
     text-decoration: none;
 
     &:hover {
-      background-color: color.adjust(#00acdc, $lightness: -15%);
-    }
+  /* stylelint-disable scss/no-global-function-names */
+  background-color: darken(#00acdc, 15%);
+  /* stylelint-enable scss/no-global-function-names */
+}
+
   }
 }
