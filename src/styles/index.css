@@ -1,0 +1,129 @@
+.card {
+  position: relative;
+  width: 200px;
+  height: 406px;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  font-family: Roboto, sans-serif;
+}
+.card__image {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+  width: 160px;
+  height: 134px;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.card__name {
+  position: absolute;
+  top: 206px;
+  left: 16px;
+  right: 16px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #060b35;
+}
+.card__code {
+  position: absolute;
+  top: 247px;
+  left: 17px;
+  width: 98px;
+  height: 14px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #616070;
+}
+.card__review {
+  position: absolute;
+  top: 277px;
+  left: 17px;
+  width: 166px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__review-count {
+  font-size: 10px;
+  line-height: 14px;
+  color: #616070;
+  text-align: right;
+}
+.card__price-box {
+  position: absolute;
+  top: 316px;
+  left: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 166px;
+  height: 18px;
+}
+.card__price-box-text {
+  font-size: 12px;
+}
+.card__price-box-number {
+  font-size: 16px;
+  font-weight: 700;
+  color: #060b35;
+}
+.card__buy {
+  position: absolute;
+  top: 350px;
+  left: 16px;
+  width: 166px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #00acdc;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.card__buy:hover {
+  background-color: #0095b8;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+.stars__star {
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/star.svg");
+  background-size: cover;
+}
+.stars--1 .stars__star:nth-child(-n+1) {
+  background-image: url("../images/star-active.svg");
+}
+.stars--2 .stars__star:nth-child(-n+2) {
+  background-image: url("../images/star-active.svg");
+}
+.stars--3 .stars__star:nth-child(-n+3) {
+  background-image: url("../images/star-active.svg");
+}
+.stars--4 .stars__star:nth-child(-n+4) {
+  background-image: url("../images/star-active.svg");
+}
+.stars--5 .stars__star:nth-child(-n+5) {
+  background-image: url("../images/star-active.svg");
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */

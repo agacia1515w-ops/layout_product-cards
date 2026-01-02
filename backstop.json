@@ -1,0 +1,32 @@
+{
+  "id": "layout_product_cards",
+  "viewports": [
+    { "label": "desktop", "width": 1280, "height": 800 },
+    { "label": "tablet", "width": 1024, "height": 768 },
+    { "label": "phone", "width": 375, "height": 667 }
+  ],
+  "scenarios": [
+    {
+      "label": "Card component",
+      "url": "http://127.0.0.1:8080",
+      "selectors": ["[data-qa=\"card\"]"],
+      "misMatchThreshold": 1
+    },
+    {
+      "label": "Link hover",
+      "url": "http://127.0.0.1:8080",
+      "hoverSelector": "[data-qa=\"hover\"]",
+      "selectors": ["[data-qa=\"card\"]"],
+      "misMatchThreshold": 1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "engine": "puppeteer",
+  "report": ["browser"]
+}
