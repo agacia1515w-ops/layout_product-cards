@@ -8,13 +8,14 @@
   "scenarios": [
     {
       "label": "Card component",
-      "url": "http://127.0.0.1:8080",
+      "url":"http://localhost:1234/index.html",
+
       "selectors": ["[data-qa=\"card\"]"],
       "misMatchThreshold": 1
     },
     {
       "label": "Link hover",
-      "url": "http://127.0.0.1:8080",
+      "url": "http://localhost:1234/index.html",
       "hoverSelector": "[data-qa=\"hover\"]",
       "selectors": ["[data-qa=\"card\"]"],
       "misMatchThreshold": 1
