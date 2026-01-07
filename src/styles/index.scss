@@ -1,15 +1,14 @@
-@import './variables';
-@import './card';
-@import './stars';
+
+
+@use './variables' as vars;
+@use './card';
+@use './stars';
+
 
 body {
-  font-family: Roboto, sans-serif;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: vars.$font-family;
 
-.cards-container {
-  display: flex;
-  gap: 20px;
 }
